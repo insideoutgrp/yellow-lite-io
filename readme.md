@@ -1,34 +1,15 @@
-# Yellow Webcam Lite
+# IO Yellow Webcam
+A revised version of AviSecs 'Yellow Lite' gphoto2 automation software to better suit the business needs.
 
-Yellow Webcam Lite turns your Raspberry PI and your DSLR camera into a powerful 
-webcam solution. Yellow Lite is released as Open Source software 
-(Apache 2.0 License) and therefore available free of charge for any usage.
+It has been rewritten to allow
+Sync to FTP/SFTP & Teleport. Panomax & Amazon S3 removed
 
-[avisec ag](https://www.avisec.ch/) runs the [Yellow Webcam solution](https://yellow.webcam/) 
-offering an end to end service that includes consulting, weather-proof 
-camera casings, privacy control and anonymization of images, as well as 
-timelapse videos.
-
-Yellow Lite contains a limited set of functionality of the Yellow Webcam and 
-allows you to resize, crop, and publish your images to the following 
-destinations.
-
-- Your FTP or SFTP server
-- [Amazon S3](https://aws.amazon.com/s3/)
-- [Teleport](https://www.teleport.io)
-- [Panomax](https://www.panomax.com/)
-
-We've compiled a series of tutorials to install and configure Yellow 
-Lite as a webcam controller on a Raspberry PI.
+Tutorials largely still apply below
 
 - [Part I: Install Raspbian on a Raspberry PI](https://photo-webcam.shop/part-install-raspbian-raspberry-pi/)
 - [Part II: Install Yellow Lite on a Raspberry PI](https://photo-webcam.shop/part-ii-install-yellow-lite-raspberry-pi/)
 - [Part III: Configure Yellow Lite](https://photo-webcam.shop/part-iii-configure-yellow-lite/)
 - [Part IV: Automatically resize and crop images](https://photo-webcam.shop/part-iv-automatically-resize-crop-images/)
-
-## Releases
-
-Binary releases are available on [photo-webcam.shop/en/yellow-lite](https://photo-webcam.shop/yellow-lite/).
 
 ## Development
 
@@ -128,19 +109,6 @@ fill all parameters of the section.
     ftp.user=
     ftp.password=
     ftp.host=
-    
-    # S3
-    aws.s3.active=false
-    aws.s3.accessKey=
-    aws.s3.secretKey=
-    aws.s3.bucket=
-    
-    # Panomax (FTP)
-    panomax.active=false
-    panomax.user=
-    panomax.camera=
-    panomax.password=
-    panomax.sftp=false
     
     # Teleport (FTP)
     teleport.active=false
